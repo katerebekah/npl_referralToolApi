@@ -48,11 +48,7 @@ namespace ReferralTool.DAL
                 currentAgency.PrimaryContactFirstName = agency.PrimaryContactFirstName;
                 currentAgency.PrimaryContactLastName = agency.PrimaryContactLastName;
                 currentAgency.ZipCode = agency.ZipCode;
-
-                //TODO: Removing all service categories and replacing them
-                var currentServiceCategories = currentAgency.ServiceCategories;
-                Context.ServiceCategories.RemoveRange(currentServiceCategories);
-
+                //TODO
                 currentAgency.ServiceCategories = agency.ServiceCategories;
             }
             Context.SaveChanges();
