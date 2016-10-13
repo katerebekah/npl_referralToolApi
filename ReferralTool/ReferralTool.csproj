@@ -95,7 +95,9 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AgencyController.cs" />
+    <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
+    <Compile Include="DAL\AgencyEmployeeRepository.cs" />
     <Compile Include="DAL\AgencyRepository.cs" />
     <Compile Include="DAL\Models\Agency.cs" />
     <Compile Include="DAL\Models\AgencyEmployee.cs" />
