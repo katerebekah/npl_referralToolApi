@@ -94,7 +94,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\RegisteredClientController.cs" />
+    <Compile Include="DAL\AgencyRepository.cs" />
     <Compile Include="DAL\Models\Agency.cs" />
+    <Compile Include="DAL\Models\AgencyEmployee.cs" />
+    <Compile Include="DAL\Models\Referral.cs" />
+    <Compile Include="DAL\Models\RegisteredClient.cs" />
+    <Compile Include="DAL\Models\ServiceCategory.cs" />
+    <Compile Include="DAL\ReferralContext.cs" />
+    <Compile Include="DAL\RegisteredClientRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -111,7 +119,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
