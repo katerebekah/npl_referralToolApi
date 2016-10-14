@@ -207,6 +207,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AgencyController.cs" />
+    <Compile Include="Controllers\ClientController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\ReferralController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
@@ -222,6 +223,7 @@
     <Compile Include="DAL\Models\ServiceCategory.cs" />
     <Compile Include="DAL\ReferralContext.cs" />
     <Compile Include="DAL\ReferralRepository.cs" />
+    <Compile Include="DAL\RegisteredClientRepository.cs" />
     <Compile Include="DAL\ServiceCategoryRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
