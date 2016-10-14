@@ -24,7 +24,7 @@ namespace ReferralTool.DAL.Models
         public string EmailAddress { get; set; }
         public string StreetAddress { get; set; }
         public string HouseNumber { get; set; }
-
+        public string Organization { get; set; }
         public int ZipCode { get; set; }
         public string Notes { get; set; }
         public virtual ICollection<Referral> Referrals { get; set; }
