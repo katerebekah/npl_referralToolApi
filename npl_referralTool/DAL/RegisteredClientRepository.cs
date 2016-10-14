@@ -34,6 +34,7 @@ namespace npl_referralTool.DAL
 
         public void AddClient(RegisteredClient client)
         {
+            client.Referrals = client.ServicesRequested.Select(x => new Referral { DateRequested = DateTime.Now, RegisteredClient = client, ServiceCategory = x, ServiceInProgress = false, ServiceRendered = false  }).ToList();
             _context.RegisteredClients.Add(client);
             _context.SaveChanges();
         }
