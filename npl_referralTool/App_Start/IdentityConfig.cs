@@ -18,6 +18,9 @@ namespace npl_referralTool
 
         public static ApplicationUserManager Create(IdentityFactoryOptions<ApplicationUserManager> options, IOwinContext context)
         {
+            // Allows cors for the /token endpoint this is different from webapi endpoints. 
+            context.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
+
             var manager = new ApplicationUserManager(new UserStore<ApplicationUser>(context.Get<ReferralContext>()));
             // Configure validation logic for usernames
             manager.UserValidator = new UserValidator<ApplicationUser>(manager)

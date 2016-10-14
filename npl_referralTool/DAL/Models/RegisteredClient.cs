@@ -27,5 +27,6 @@ namespace npl_referralTool.DAL.Models
         public int ZipCode { get; set; }
         public string Notes { get; set; }
         public virtual ICollection<Referral> Referrals { get; set; }
+        public virtual ICollection<ServiceCategory> ServicesRequested { get; set; }
     }
 }

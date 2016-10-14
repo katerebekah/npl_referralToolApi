@@ -1,5 +1,6 @@
 namespace npl_referralTool.Migrations
 {
+    using DAL.Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -26,6 +27,17 @@ namespace npl_referralTool.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+
+            context.ServiceCategories.AddOrUpdate(
+                s => s.ServiceCategoryName,
+                new ServiceCategory { ActiveIndicator = true, ServiceCategoryName = "Education" },
+                new ServiceCategory { ActiveIndicator = true, ServiceCategoryName = "Employment" },
+                new ServiceCategory { ActiveIndicator = true, ServiceCategoryName = "Finances" },
+                new ServiceCategory { ActiveIndicator = true, ServiceCategoryName = "Health" },
+                new ServiceCategory { ActiveIndicator = true, ServiceCategoryName = "Housing and Food" },
+                new ServiceCategory { ActiveIndicator = true, ServiceCategoryName = "Youth and Children" },
+                new ServiceCategory { ActiveIndicator = true, ServiceCategoryName = "Additional Services" }
+                );
         }
     }
 }

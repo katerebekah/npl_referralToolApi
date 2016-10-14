@@ -12,7 +12,7 @@ namespace npl_referralTool.DAL.Models
         public int ServiceCategoryID { get; set; }
         [Required]
         public string ServiceCategoryName { get; set; }
-        [Required]
+
         public string ServiceDescription { get; set; }
         [Required]
         public bool ActiveIndicator { get; set; }

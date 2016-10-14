@@ -61,6 +61,7 @@ namespace npl_referralTool.DAL
                 client.PhoneNumber1 = modifyClient.PhoneNumber1;
                 client.PhoneNumber2 = modifyClient.PhoneNumber2;
                 client.Referrals = modifyClient.Referrals;
+                client.ServicesRequested = modifyClient.ServicesRequested;
                 client.StreetAddress = modifyClient.StreetAddress;
                 client.ZipCode = modifyClient.ZipCode;
 

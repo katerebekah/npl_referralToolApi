@@ -20,6 +20,7 @@ namespace npl_referralTool.Controllers
 
         [HttpGet]
         [Route("client")]
+        [Authorize]
         public List<RegisteredClient> Get()
         {
             return _registeredClientRepo.GetAll();
@@ -27,6 +28,7 @@ namespace npl_referralTool.Controllers
 
         [HttpGet]
         [Route("client/{id}")]
+        [Authorize]
         public RegisteredClient GetByID(int id)
         {
             return _registeredClientRepo.GetById(id);
@@ -34,6 +36,7 @@ namespace npl_referralTool.Controllers
 
         [HttpGet]
         [Route("client/{email}")]
+        [Authorize]
         public RegisteredClient GetByEmail(string email)
         {
             return _registeredClientRepo.GetByEmail(email);
@@ -41,7 +44,6 @@ namespace npl_referralTool.Controllers
 
         [HttpPost]
         [Route("client/")]
-        [Authorize]
         public void AddClient(RegisteredClient client)
         {
             _registeredClientRepo.AddClient(client);
