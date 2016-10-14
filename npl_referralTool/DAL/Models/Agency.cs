@@ -12,13 +12,13 @@ namespace npl_referralTool.DAL.Models
         public int AgencyID { get; set; }
         [Required]
         public string AgencyName { get; set; }
-        [Required, MaxLength(5)]
+        [Required]
         public int ZipCode { get; set; }
         [Required]
         public string EmailAddress { get; set; }
-        [Required, MaxLength(3)]
+        [Required]
         public int AreaCode { get; set; }
-        [Required, MaxLength(8)]
+        [Required]
         public string PhoneNumber { get; set; }
         [Required]
         public string PrimaryContactLastName { get; set; }

@@ -15,7 +15,7 @@ namespace npl_referralTool.DAL.Models
         public string LastName { get; set; }
         [Required]
         public string EmailAddress { get; set; }
-        [Required, MaxLength(3)]
+        [Required]
         public int AreaCode { get; set; }
         [Required, MaxLength(8)]
         public string PhoneNumber { get; set; }

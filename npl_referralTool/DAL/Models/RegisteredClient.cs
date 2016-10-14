@@ -13,11 +13,10 @@ namespace npl_referralTool.DAL.Models
         [Required]
         public string LastName { get; set; }
         public string FirstName { get; set; }
-        [Required, MaxLength(3)]
+        [Required]
         public int AreaCode { get; set; }
         [Required, MaxLength(8)]
         public string PhoneNumber1 { get; set; }
-        [MaxLength(3)]
         public int AreaCode2 { get; set; }
         [MaxLength(8)]
         public string PhoneNumber2 { get; set; }

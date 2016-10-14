@@ -34,16 +34,7 @@ namespace ReferralTool.Controllers
         [Route("referral/{id}")]
         public Referral GetById(int id)
         {
-            return new Referral
-            {
-                Agency = new Agency
-                {
-                    AgencyActiveIndicator = true,
-                    AgencyName = "Bob"
-                },
-                DateRequested = DateTime.Now
-             };
-//            return repository.GetById(id);
+            return repository.GetById(id);
         }
 
         [HttpGet]
